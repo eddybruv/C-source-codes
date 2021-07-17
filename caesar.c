@@ -7,7 +7,7 @@
 #include<cs50.h>
 #include<ctype.h>
 #include<string.h>
-
+#include<stdlib.h>
 
 int main(int argc,string argv[]){
 
@@ -19,7 +19,8 @@ int main(int argc,string argv[]){
     }
 
     //converts argv(1) from string to interger
-    int key = (int)argv[1];
+    int key;
+    key = atoi(argv[1]);
 
     //get plaintext to covert/encrypt
     printf("Enter Text: ");
