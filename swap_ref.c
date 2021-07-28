@@ -1,5 +1,6 @@
 /* Date : 11-07-2021
     by eddybruv
+    exercise from tutor
     */
 
 #include<stdio.h>
