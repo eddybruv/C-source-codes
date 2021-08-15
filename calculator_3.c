@@ -5,7 +5,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int operator;
+int operator; //external variable
+
+/* Prorotypes */
 
 void options(void);
 void greet (void);
@@ -13,6 +15,7 @@ void choice(void);
 void operations(int, int, int);
 void input(void);
 
+//main function
 
 int main(void){
     greet();
@@ -22,6 +25,10 @@ int main(void){
     return 0;
 }
 
+/* *********************************
+ * Prints the options of operation * 
+ * *********************************/
+
 void options(void){
     printf("\n        OPTIONS \n");
     printf("=======================\n");
@@ -29,10 +36,20 @@ void options(void){
     printf("=======================\n");
 }
 
+/****************************************
+ *  Prints Salutation and calls option()*
+ ****************************************/
+
 void greet(void){
     printf("\nHello I'm here to make your life easier\n");
     options();
 }
+
+
+/* ********************************
+ * Gets the options of operation  *
+ * Ends program if operation is 5 *
+ * ********************************/
 
 void choice(void){
     printf("\nEnter your choice(1-5): ");
@@ -44,6 +61,11 @@ void choice(void){
     else input();
 }
 
+/************************************
+ * Gets input(numbers) from the user*
+ * Calls operations()               *
+ * **********************************/
+
 void input(void){
     int x, y;
     printf("\nEnter any two numbers: ");
@@ -51,6 +73,9 @@ void input(void){
     operations(operator, x, y);
 }
 
+/*******************
+ * Does arithmetics*
+ * *****************/
 
 void operations(int operator, int x, int y){
     switch(operator){
