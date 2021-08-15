@@ -30,6 +30,10 @@ int main(void){
     else if(operator == '%')
         printf("\nNum1 %% Num2: %.2d",((int)x % (int)y));
 
+    else if(operator == '*')
+        printf("Num_1 * Num_2: %.2f", x * y);
+
+
     else printf("\nEnter a valid operator");
 
     printf("\n\n");
