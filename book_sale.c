@@ -3,6 +3,7 @@
     */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 float price = 0;
 
@@ -46,6 +47,9 @@ void choice(void){
             book_4++;
         if (choice == 5)
             book_5++;
+        
+        if(choice > 5 || choice < 0)
+            exit(1);
     }
     calculations(book_1, book_2, book_3, book_4, book_5);
 }
