@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
+#include <ctype.h>
 
 #define N 20
 bool balanced(char *, int);
@@ -34,9 +35,9 @@ bool balanced(char str[], int len)
     int count_x = 0, count_y =  0;
     for(int i = 0; i < len; i++)
     {
-        if(str[i] == 'x')
+        if(tolower(str[i]) == 'x')
             count_x++;
-        if(str[i] == 'y')
+        if(tolower(str[i]) == 'y')
             count_y++;
     }
 
