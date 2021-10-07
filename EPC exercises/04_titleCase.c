@@ -6,7 +6,6 @@
  **/
 
 #include <ctype.h>
-#include <stdio.h>
 
 char* caseTitle(const char *str)
 {
